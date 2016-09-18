@@ -14,7 +14,7 @@ app.get('/profile', function (req, res) {
 });
 
 app.get('/article2', function (req, res) {
- res.send("This is my second route");
+res.sendFile(path.join(__dirname, 'ui', 'arcticle-two.html'));
 });
 
 app.get('/article3', function (req, res) {
