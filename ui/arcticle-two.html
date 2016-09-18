@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="verify-v1" content="91yIG+EaOdwKuPX+R9ChHEWVXJ6wdQsq0gqD1c1sbaY="/>
-<title>David Shapiro, Resume- Web Developer</title>
+<title>Arun kumar</title>
 <style type="text/css">
 body{font-family:Geneva, Arial, Helvetica, sans-serif;font-size:12px;font-weight:normal;color:#000000;text-align:center;margin:0;padding:0;line-height:1.5em;}
 header, section, article{display:block;}
@@ -39,76 +39,7 @@ body{font-size:18px;}
 #body_popup{max-width:1000px;}
 }
 </style>
-<script type="text/javascript">
-(function(){
-  function loadScript(url, callback){  //lifted from Nick Zakas
-    var script = document.createElement("script")
-    script.type = "text/javascript";
-    if (script.readyState){  //IE
-      script.onreadystatechange = function(){
-        if (script.readyState == "loaded" ||
-          script.readyState == "complete"){
-          script.onreadystatechange = null;
-          callback();
-        }
-      };
-    }else{  //Others
-      script.onload = function(){
-        callback();
-      };
-    }
-    script.src = url;
-    document.body.appendChild(script);
-  }
-  //libraries to load after document.load event
-  function afterLoad() {
-	loadScript("http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js", afterJQLoad);
-	loadScript("http://www.google-analytics.com/ga.js", googleCrap);
-  }
-  //stuff to do after jQuery is loaded
-  function afterJQLoad(){
-    var details = '',
-      coords = {left:'0px', top:'0px'},
-      close = function(){
-        details = '';
-        $("#body_popup > div.temp").remove();
-	    $("#body_popup").css({left:'0px', top:'0px'}).hide();
-      };
-    $(".details, .notice").click(function(e){  
-      var $target = $(this),
-	    coords = {left:'10px', top:e.pageY + 'px'};
-	  if(details !== ''){ 
-	    close();
-	  }
-	  details = $(this.rel).html();
-	  var id = ($target.hasClass("details")) ? "#skills_popup" : "#notice_popup";
-	  $("#body_popup").append(details).css(coords).show();
-    });
-    $(".close").click(function(){
-	  close();
-    });
-    $(".external").on('click', function(){
-      var url = this.rel;
-      window.open(url);
-      return;
-    }); 
-  }
-  function googleCrap(){
-    try {
-      var pageTracker = _gat._getTracker("UA-8130141-1");
-      pageTracker._trackPageview();
-    }catch(err){}  
-  }
-  
-  if (window.addEventListener){
-    window.addEventListener("load", afterLoad, false);
-  }else if (window.attachEvent){
-    window.attachEvent("onload", afterLoad);
-  } else {
-    window.onload = afterLoad;
-  }
-})();
-</script>
+
 <!--[if lt IE 9]>
 <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
