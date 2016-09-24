@@ -10,13 +10,12 @@ app.get('/', function (req, res) {
 });
 
 var counter =0;
-app.get('/counter',function (req,res){
-   counter=counter+1;
-   res.send(counter.toString());
-});
+
 
 app.get('/profile', function (req, res) {
  res.sendFile(path.join(__dirname, 'ui', 'profile.html'));
+  counter=counter+1;
+   res.send(counter.toString());
 });
 
 app.get('/article2', function (req, res) {
