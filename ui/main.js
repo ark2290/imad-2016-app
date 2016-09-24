@@ -17,7 +17,7 @@ var request = new XMLHttpRequest();
 
 //capture the resources and store it ina variable
 request.onreadystatechange=function(){
-    if(request.readyState === XMLHttprequest.DONE){
+    if(request.readyState === XMLHttpRequest.DONE){
         //Take some actionn
         if(request.status===200){
             var counter=request.responseText;
