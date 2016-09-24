@@ -1,14 +1,6 @@
 console.log('Loaded!');
 
 
-var image=document.getElementById("topinfo");
-
-image.onclick=function(){
-    image.style.marginRight="300px";
-    setTimeout(function(){ image.style.marginTop="100px"; }, 2000);
-    
-};
-
 var button=document.getElementById("counter");
 //var counter=0;
 button.onclick=function(){
@@ -31,7 +23,7 @@ request.onreadystatechange=function(){
 
 
 //Making the request
-request.open("GET","http://ark2290.imad.hasura-app.io/profile",true);
+request.open("GET","http://ark2290.imad.hasura-app.io/counter",true);
 request.send(null);
 
 };
