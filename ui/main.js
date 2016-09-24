@@ -1,7 +1,7 @@
 console.log('Loaded!');
 
 
-var image=document.getElementById("madi");
+var image=document.getElementById("topinfo");
 
 image.onclick=function(){
     image.style.marginRight="300px";
